@@ -4,9 +4,9 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <div>
+    <div className='bg-gradient-to-r from-slate-900 to-slate-700 h-screen w-full text-white'>
         <Nav/>
-        <main>
+        <main className='container mx-auto p-3'>
             <Outlet/>
         </main>
     </div>

@@ -1,8 +1,15 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
-    <div className='bg-blue-500 text-3xl font-bold'>Home</div>
+    <div>
+      <div className='flex flex-col gap-3'>
+        <Link to='/counter' className='hover:text-gray-400'>Counter</Link>
+        <hr/>
+        <Link to='/todolist' className='hover:text-gray-400'>Todo List</Link>
+        <hr/>
+      </div>
+    </div>
   )
 }
 
